@@ -11,20 +11,9 @@ load this into the board with the Arduino IDE and a suitably aged ESP IDF
 
  ## communication
 
- ### tio commands
+use python3 talk.py
 
- Key Action Notes
-Ctrl-t ?    Show help menu  Quick reference of all keys
-Ctrl-t q    Quit            Graceful exit
-Ctrl-t s    Send file       Prompts for filename; sends contents down the serial link
-Ctrl-t p    Toggle local echo   See what you type if your board doesn’t echo
-Ctrl-t l    Log session to file Starts/stops logging serial output
-Ctrl-t r    Reset serial port   Reopen connection (useful after flashing, etc.)
+say :send <filename> when you want to send something
 
 
-### rlwrap
-
-- gives you command history
-
-rlwrap tio -b 115200 /dev/tty.usbserial-110
 
