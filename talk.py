@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 import serial, sys, threading, readline, time
 
-PORT = "/dev/tty.usbserial-110"
+# PORT = "/dev/tty.usbserial-110"
+PORT = "/dev/tty.usbserial-0001"
+
 BAUD = 115200
 
 ser = serial.Serial(PORT, BAUD, timeout=0.1)
